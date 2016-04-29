@@ -353,6 +353,10 @@ public class CraftingGridCache implements ICraftingGrid, ICraftingProviderHelper
 	@Override
 	public void addCraftingOption( final ICraftingMedium medium, final ICraftingPatternDetails api )
 	{
+		if (api == null || medium == null) 
+		{
+			return;
+		}
 		List<ICraftingMedium> details = this.craftingMethods.get( api );
 		if( details == null )
 		{
