@@ -42,7 +42,7 @@ import appeng.me.cluster.implementations.CraftingCPUCluster;
 public class CraftingTreeNode
 {
 
-	// what slot!
+	// what slot! that slot!
 	private final int slot;
 	private final CraftingJob job;
 	private final IItemList<IAEItemStack> used = AEApi.instance().storage().createItemList();
